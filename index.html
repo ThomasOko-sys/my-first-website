@@ -28,10 +28,9 @@
     cursor: pointer;
 }
 input {
-    padding: 10px;
-    width: 200px;
-    border-radius: 5px;
-    border: none;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
 }
 h2 {
     margin-top: 40px;
@@ -51,15 +50,54 @@ img {
     border-radius: 10px;
     margin-top: 20px;
 }
+.booking {
+  max-width: 900px;
+  margin: 60px auto;
+  padding: 20px;
+  text-align: center;
+}
+
 .booking-form {
+  max-width: 700px;
+  margin: 30px auto 0;
+  margin-top: 30px;
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 15px;
 }
+.booking-form label {
+  margin-top: 10px;
+}
+.booking-form label {
+  display: block;
+  text-align: left;
+  margin-bottom: 6px;
+  font-weight: bold;
+}
+
+.booking-form input,
+.booking-form select,
+.booking-form textarea {
+  width: 100%;
+  padding: 12px;
+  border-radius: 8px;
+  border: none;
+  box-sizing: border-box;
+}
 
 .booking-form textarea,
 .booking-form button {
-  grid-column: span 2;
+  grid-column: 1 / -1;
+}
+
+.booking-form button {
+  background: #d4a373;
+  color: black;
+  padding: 14px;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
 }
 .btn {
   display: inline-block;
