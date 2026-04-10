@@ -150,24 +150,14 @@ img {
   margin: 60px auto;
 }
 
-.services-box {
-  text-align: left;
-}
 
-.services-info {
-  text-align: right;
-  color: #ccc;
-}
 @media (max-width: 768px) {
   .services {
     flex-direction: column;
     text-align: center;
   }
 
-  .services-box,
-  .services-info {
-    text-align: center;
-  }
+  
 
   .booking-form {
     grid-template-columns: 1fr;
@@ -205,22 +195,17 @@ img {
   <img src="before.jpg" alt="Before">
   <img src="after.jpg" alt="After">
 </div>
-
 <div class="services">
-  <div class="services-box">
-    <h2>Our Services</h2>
-    <p>✂️ Haircut — £20</p>
-    <p>💈 Skin Fade — £25</p>
-    <p>🧔 Beard Trim — £15</p>
-    <p>Book your appointment today</p>
-    <a href="#booking" class="btn">Book Now</a>
-  </div>
+  <h2>Our Services</h2>
+  <p>✂️ Haircut — £20</p>
+  <p>💈 Skin Fade — £25</p>
+  <p>🧔 Beard Trim — £15</p>
+  <p>Book your appointment today</p>
+  <a href="#booking" class="btn">Book Now</a>
 
-  <div class="services-info">
-    <p>📍 London</p>
-    <p>Open 7 days</p>
-  </div>
+  <p class="info">📍 London | Open 7 days</p>
 </div>
+
 <hr>
 
 <section id="booking" class="booking">
