@@ -261,8 +261,10 @@ img {
   const bookingForm = document.getElementById("bookingForm");
   const successMessage = document.getElementById("successMessage");
 
-  bookingForm.addEventListener("submit", function () {
+  bookingForm.addEventListener("submit", function (event) {
+    event.preventDefault();
     successMessage.style.display = "block";
+    bookingForm.reset();
   });
 </script>
 </body>
